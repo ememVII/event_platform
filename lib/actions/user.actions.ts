@@ -6,7 +6,8 @@ import { connectToDB } from "../database";
 import User from "../database/models/user.model";
 import Event from "../database/models/event.model";
 import Order from "../database/models/order.model";
-import { revalidatePath } from "next/cache";
+import Category from "../database/models/category.model";
+import { revalidatePath } from "next/cache";    
 
 export const getUserById = async (userId: string) => {
     try {
